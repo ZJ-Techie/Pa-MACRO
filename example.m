@@ -28,16 +28,16 @@ Z1 = getNormalization(Z1, 'normlize');
 
 % set parameters range
 % for Pa-MACRO
-paras.PaMACRO.lambda.u1 = 1;    
-paras.PaMACRO.lambda.u2 = 1;    
-paras.PaMACRO.lambda.u3 = 1;
+paras.PaMACRO.lambda.u1 = 0.1;    
+paras.PaMACRO.lambda.u2 = 0.01;    
+paras.PaMACRO.lambda.u3 = 0.01;
 
 paras.PaMACRO.lambda.v1 = 0.01;  
-paras.PaMACRO.lambda.v11 = 0.1; 
-paras.PaMACRO.lambda.v2 = 10;  
+paras.PaMACRO.lambda.v11 = 0.01; 
+paras.PaMACRO.lambda.v2 = 0.01;  
 
 paras.PaMACRO.lambda.w1 = 0.01; 
-paras.PaMACRO.lambda.w2 = 10;  
+paras.PaMACRO.lambda.w2 = 0.01;  
 
 %% Cross validation 
 Kfold = 5;
@@ -77,4 +77,5 @@ for k = 1 : Kfold
 end
 
 disp('==============================');
+
 
