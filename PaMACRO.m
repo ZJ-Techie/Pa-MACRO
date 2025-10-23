@@ -65,7 +65,7 @@ function [Uall, Vall, Wall, Q] = PaMACRO(data, opts)
     YY = Y' * Y;
     
     p = b;
-    block = 250;
+    block = 50;
     Xall = X;
     unXall = unX;
     nblock = ceil(p / block);
@@ -350,4 +350,5 @@ vlen = length(v1);
     end
 D = 0.5 ./ d;
 pen_Value = sum(d);
+
 end
